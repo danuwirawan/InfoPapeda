@@ -829,7 +829,7 @@ export default function App() {
                 <div className="w-full md:w-1/3">
                   <div className="aspect-square bg-gold/10 rounded-2xl overflow-hidden border-4 border-gold/30 mb-6 flex items-center justify-center">
                     {selectedMember.image ? 
-                      <img src={selectedMember.image} alt={selectedMember.name} referrerPolicy="no-referrer" className="w-full h-full object-cover" /> :
+                      <img src={`${import.meta.env.BASE_URL}${selectedMember.image.startsWith('/') ? selectedMember.image.substring(1) : selectedMember.image}`} alt={selectedMember.name} referrerPolicy="no-referrer" className="w-full h-full object-cover" /> :
                       <Users className="text-gold" size={80} />
                     }
                   </div>
@@ -900,7 +900,7 @@ export default function App() {
               >
                 <div className="w-24 h-24 bg-gold/10 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden border-2 border-gold/30">
                   {member.image ? 
-                    <img src={member.image} alt={member.name} referrerPolicy="no-referrer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /> :
+                    <img src={`${import.meta.env.BASE_URL}${member.image.startsWith('/') ? member.image.substring(1) : member.image}`} alt={member.name} referrerPolicy="no-referrer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" /> :
                     <Users className="text-gold" size={40} />
                   }
                 </div>
