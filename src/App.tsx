@@ -757,6 +757,8 @@ export default function App() {
 
   // Memungkinkan kita menggunakan import.meta.env.BASE_URL di JSX
   const getImgUrl = (path: string) => {
+    // Agar bisa diganti dengan link HTTP eksternal nantinya, kita cek apakah ini link lengkap atau hanya dari /images
+    if (path.startsWith('http')) return path;
     return `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.substring(1) : path}`;
   };
 
@@ -772,7 +774,7 @@ export default function App() {
       about: "Saya adalah seseorang yang suka mengekspresikan diri lewat gambar. Bagi saya, menggambar bukan hanya sekadar hobi, tapi juga cara untuk menuangkan imajinasi dan perasaan yang kadang sulit diungkapkan dengan kata-kata. Saya juga tertarik dengan suasana cyberpunk city—kota futuristik dengan lampu neon dan teknologi modern. Suasana seperti itu membuat saya merasa lebih hidup dan berwarna.",
       likes: "Saya sangat menyukai hewan, terutama anjing dan kucing. Untuk anjing, saya paling suka Doberman dan Golden Retriever karena terlihat gacor, setia, dan memiliki karakter yang kuat. Saya juga pecinta makanan seafood, terutama udang dan cumi, karena rasanya yang lezat dan bikin ketagihan. Untuk minuman, saya menyukai rasa yang creamy dan khas seperti matcha, Thai tea, dan teh tarik, yang cocok dinikmati saat santai.",
       ig: "@_.gzheii, @grethd_puff8",
-      image: getImgUrl("/images/kurator-1.jpg")
+      image: "https://i.ibb.co/60VvGZT/kurator-1.jpg" // <-- GANTI LINK INI DENGAN LINK FOTO YANG ASLI
     },
     { 
       name: "Chaesar Intan Zabrina", 
@@ -784,7 +786,7 @@ export default function App() {
       citaCita: "Pemain bola voli",
       about: "Semangat ke sekolah, karena ilmu adalah kunci kesuksesan. Makanan khas papeda bukan sekadar makanan, tetapi warisan budaya yang diolah dengan penuh kesabaran dan cinta.",
       likes: "Saya suka berolahraga terutama voli dan menjaga kebugaran dengan joging. Selain itu, saya senang bereksperimen di dapur untuk memasak.",
-      image: getImgUrl("/images/kurator-2.jpg")
+      image: "https://i.ibb.co/Xz9k564/kurator-2.jpg" // <-- GANTI LINK INI DENGAN LINK FOTO YANG ASLI
     },
     { 
       name: "Resty Fitriani", 
@@ -795,7 +797,7 @@ export default function App() {
       hobby: "Membaca, memasak, dan mendengarkan musik",
       about: "Perkenalkan, nama saya Resty Fitriani, biasa dipanggil Resty. Saat ini saya tinggal di Banjarnegara. Saya adalah anak pertama dari empat bersaudara. Semangat belajar, karena ilmu adalah kunci menuju masa depan yang cerah.",
       likes: "Memasak bukan hanya sekadar hobi, tetapi juga cara untuk mengekspresikan kreativitas dan memberikan kebahagiaan kepada orang lain. Saya juga sangat menyukai musik dan membaca buku.",
-      image: getImgUrl("/images/kurator-3.jpg")
+      image: "https://i.ibb.co/K2sYF9X/kurator-3.jpg" // <-- GANTI LINK INI DENGAN LINK FOTO YANG ASLI
     },
     { 
       name: "Uswatun Hasanah", 
@@ -806,7 +808,7 @@ export default function App() {
       citaCita: "CEO / Masuk FH Undip",
       about: "Kon'nichiwa minasan, Hajimemashite nama aku Uswatun Hasanah dipanggil nengok. Aku lahir di Banjarnegara dibumi dan dari perut ibuku. Kadang pelupa tapi kalau ngelupain jungwon gabisa sih ksksks. Arigato gamsahabnida.",
       likes: "Hobiku sangat beragam: kadang menari, kadang makan, kadang membaca, kadang mendengarkan lagu, kadang nyanyi, dan kadang tidur. Dan pastinya The Boyz / Jungwon!",
-      image: getImgUrl("/images/kurator-4.jpg")
+      image: "https://i.ibb.co/3Wf21qj/kurator-4.jpg" // <-- GANTI LINK INI DENGAN LINK FOTO YANG ASLI
     },
     { 
       name: "Rafalentino", 
@@ -818,7 +820,7 @@ export default function App() {
       ig: "@adalah pokonya",
       about: "Halo perkenalkan nama saya adalah Rafalentino, saya adalah pelajar SMAN 1 PURWAREJA klampok. Rafa anaknya adalah pendiam tapi dalam kediaman itu Rafa memiliki mindset untuk berkembang. Rafa menghabiskan masa muda dengan terus belajar walaupun banyak kegagalan tapi Rafa tidak menyerah.",
       likes: "Saya suka dengan dunia sastra. Saya suka mencoba banyak hal baru yang belum pernah saya ketahui karena di situ dapat membuat saya berkembang lebih baik. Saya suka membuat cerpen, puisi sendiri walaupun kurang bagus tapi saya merasa senang.",
-      image: getImgUrl("/images/kurator-5.jpg")
+      image: "https://i.ibb.co/bW0d73x/kurator-5.jpg" // <-- GANTI LINK INI DENGAN LINK FOTO YANG ASLI
     }
   ];
 
