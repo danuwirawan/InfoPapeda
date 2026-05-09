@@ -475,7 +475,7 @@ export default function App() {
     <div className="p-6 md:p-24 bg-deep-brown min-h-screen flex items-center justify-center text-cream">
       <div className="max-w-4xl w-full bg-white/5 border border-gold/30 rounded-3xl p-8 md:p-12 backdrop-blur-xl shadow-2xl relative overflow-hidden" data-aos="zoom-in">
         <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-          <Heart size={200} className="text-gold" />
+          {/* Removed Heart icon as requested */}
         </div>
         
         <button onClick={() => setView('HOME')} className="mb-12 text-gold flex items-center gap-2 hover:underline font-sans text-xs uppercase tracking-widest font-bold relative z-10"><ArrowLeft size={16} /> Kembali ke Galeri</button>
