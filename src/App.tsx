@@ -524,8 +524,8 @@ export default function App() {
                 <p className="font-serif text-lg text-white">Rp 200.000 <span className="text-sm text-gray-500">/ bulan</span></p>
               </div>
               <div className="bg-black/20 p-4 rounded-xl border border-white/5">
-                <p className="text-gray-400 text-xs mb-1">Google Gemini Pro</p>
-                <p className="font-serif text-lg text-white">Gratis <span className="text-sm text-gray-500">(Eksperimental)</span></p>
+                <p className="text-gray-400 text-xs mb-1">Google Gemini Pro / Advanced</p>
+                <p className="font-serif text-lg text-white">Rp 987.000 <span className="text-sm text-gray-500">/ 3 bulan</span></p>
               </div>
               <div className="bg-black/20 p-4 rounded-xl border border-white/5">
                 <p className="text-gray-400 text-xs mb-1">Firebase Backend</p>
@@ -533,9 +533,9 @@ export default function App() {
               </div>
             </div>
             
-            <div className="mt-6 bg-red-500/10 border border-red-500/20 p-4 rounded-xl text-center">
-              <p className="text-sm text-red-200">
-                <span className="font-bold">Hosting:</span> Belum ditentukan (Sedang mencari yang gratis 😁)
+            <div className="mt-6 bg-green-500/10 border border-green-500/20 p-4 rounded-xl text-center">
+              <p className="text-sm text-green-200">
+                <span className="font-bold">Hosting Aplikasi:</span> Kita menggunakan fitur web hosting gratis dari <span className="text-white">GitHub Pages</span> untuk meng-online-kan website ini! 🚀
               </p>
             </div>
           </div>
